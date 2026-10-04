@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-primary: #1769D2;
+    --color-primary-dark: #124B9A;
+    --color-primary-light: #3988E8;
+    --color-sky: #EAF4FF;
+    --color-ice: #F3F8FF;
+    --color-alt-bg: #F5F9FF;
+    --color-text-main: #172B4D;
+    --color-text-muted: #64748B;
+    --color-border: #E2EAF4;
+    --color-success: #16A34A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #172B4D;
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-plus-jakarta), var(--font-inter), system-ui, sans-serif;
+    color: #172B4D;
+    letter-spacing: -0.02em;
+    font-weight: 700;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Utilities for Premium Architectural & Engineering Aesthetic */
+.bg-corporate-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(23, 105, 210, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 105, 210, 0.04) 1px, transparent 1px);
+}
+
+.bg-hero-radial {
+  background: radial-gradient(circle at 80% 20%, #EAF4FF 0%, #FFFFFF 70%);
+}
+
+.card-hover-effect {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px -8px rgba(23, 105, 210, 0.08), 0 4px 12px -2px rgba(23, 105, 210, 0.04);
+  border-color: #3988E8;
+}
+
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 80%
+  );
+  transform: rotate(25deg) translateY(-100%);
+  transition: transform 0.75s ease;
+}
+
+.btn-shimmer:hover::after {
+  transform: rotate(25deg) translateY(100%);
 }
