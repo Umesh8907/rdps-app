@@ -77,8 +77,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${plusJakartaSans.variable} ${inter.variable} h-full antialiased light`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-white text-[#172B4D] selection:bg-[#EAF4FF] selection:text-[#1769D2]">
+      <body
+        className="min-h-full flex flex-col bg-white text-[#172B4D] selection:bg-[#EAF4FF] selection:text-[#1769D2]"
+        suppressHydrationWarning
+      >
         <JsonLd />
         <Header />
         <main className="flex-grow">{children}</main>
