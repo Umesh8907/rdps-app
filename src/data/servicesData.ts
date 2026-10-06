@@ -27,7 +27,7 @@ export const servicesData: ServiceItem[] = [
     title: "Underground Pipeline Installation",
     shortDescription: "Professional pipeline laying, alignment, jointing and backfilling for drainage, water and infrastructure developments.",
     iconName: "Network",
-    heroImage: "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "/assets/projects/Avinash New County - 1.jpg",
     headline: "Underground Pipeline Installation Services",
     introduction: "RD Plumbing Solution delivers professional underground pipeline laying, precision trench preparation, and associated civil execution for residential, commercial, and municipal infrastructure developments across Chhattisgarh and India.",
     scope: [
@@ -64,7 +64,7 @@ export const servicesData: ServiceItem[] = [
         description: "Checking joints for integrity, controlled layer-by-layer backfilling, and mechanical compaction to avoid surface settlement.",
       },
     ],
-    relatedProjects: ["commercial-pipeline-raipur", "residential-township-drainage", "industrial-water-supply-bhilai"],
+    relatedProjects: ["avinash-new-county", "the-lagoon", "lifestyle-township"],
     faqs: [
       {
         question: "What pipe materials do you install for underground projects?",
@@ -82,7 +82,7 @@ export const servicesData: ServiceItem[] = [
     title: "Stormwater Drainage",
     shortDescription: "Surface runoff drainage channels, box culverts, underground stormwater conduits and catchment connections.",
     iconName: "CloudRain",
-    heroImage: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "/assets/projects/Golf - 2.jpg",
     headline: "Stormwater Drainage & Runoff Management",
     introduction: "Effective stormwater drainage is vital to prevent waterlogging, soil erosion, and structural foundation damage. We construct reliable underground and surface stormwater drainage systems built for heavy monsoon runoff.",
     scope: [
@@ -117,7 +117,7 @@ export const servicesData: ServiceItem[] = [
         description: "Inspecting free gravity discharge into designated collection ponds or stormwater trunk mains.",
       },
     ],
-    relatedProjects: ["stormwater-network-naya-raipur", "residential-township-drainage"],
+    relatedProjects: ["avinash-new-county", "golf-greens", "rama-greens"],
     faqs: [
       {
         question: "Can stormwater drainage be combined with sewerage lines?",
@@ -132,15 +132,15 @@ export const servicesData: ServiceItem[] = [
   {
     id: "sewer-line-installation",
     slug: "sewer-line-installation",
-    title: "Sewer Line Installation",
+    title: "Sewer Line Installation & PVC/Cast Iron Works",
     shortDescription: "Underground gravity sewer mains, collector lines, drop connections and STP feeder networks.",
     iconName: "Waves",
-    heroImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "/assets/projects/Rama Greens 1.jpg",
     headline: "Sewer Line & Underground Sewerage Execution",
-    introduction: "We execute gravity sewer lines, collector pipeline networks, and STP inlet trunk connections with strict adherence to slope gradients, joint watertightness, and chamber integration.",
+    introduction: "We execute gravity sewer lines, collector pipeline networks, cast iron risers, and STP inlet trunk connections with strict adherence to slope gradients, joint watertightness, and chamber integration.",
     scope: [
       "Trunk and branch gravity sewer pipe laying",
-      "DWC, PVC-U and RCC sewer pipe jointing with elastomeric rubber rings",
+      "DWC, PVC-U, Cast Iron and RCC sewer pipe jointing with elastomeric rubber rings",
       "Alignment and depth calibration for self-cleansing velocity",
       "Drop connections and intermediate manhole linkages",
       "Connecting building waste outlets to main sewer collectors",
@@ -170,7 +170,7 @@ export const servicesData: ServiceItem[] = [
         description: "Performing smoke/water mirror tests before backfilling to guarantee clear flow channels.",
       },
     ],
-    relatedProjects: ["sewerage-trunk-line-durg", "residential-township-drainage"],
+    relatedProjects: ["rama-greens", "avinash-chitwan", "sun-city"],
     faqs: [
       {
         question: "How do you prevent sewer blockages in underground pipes?",
@@ -181,10 +181,10 @@ export const servicesData: ServiceItem[] = [
   {
     id: "water-supply-pipeline",
     slug: "water-supply-pipeline",
-    title: "Water Supply Pipeline",
+    title: "Water Supply Pipeline & Distribution",
     shortDescription: "Potable water distribution lines, underground HDPE/DI feeder mains, overhead tank connections and booster networks.",
     iconName: "Droplet",
-    heroImage: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "/assets/projects/Lifestyle - 1.png",
     headline: "Potable Water Supply & Distribution Pipelines",
     introduction: "RD Plumbing Solution installs robust potable water supply networks, pressurized distribution mains, underground sump feeder lines, and booster pump distribution systems for residential and commercial complexes.",
     scope: [
@@ -219,7 +219,7 @@ export const servicesData: ServiceItem[] = [
         description: "Executing hydrostatic pressure tests to verify joint integrity under working conditions.",
       },
     ],
-    relatedProjects: ["industrial-water-supply-bhilai", "commercial-pipeline-raipur"],
+    relatedProjects: ["lifestyle-township", "avinash-twin-city", "sun-city"],
     faqs: [
       {
         question: "Do you perform butt-fusion welding for HDPE water lines?",
@@ -233,7 +233,7 @@ export const servicesData: ServiceItem[] = [
     title: "Excavation & Trenching",
     shortDescription: "Mechanical and manual precision trenching, shoring, soil grading, rock chipping and utility trench backfilling.",
     iconName: "Shovel",
-    heroImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "/assets/projects/Smart City - 1.jpg",
     headline: "Civil Excavation & Utility Trenching Services",
     introduction: "Accurate excavation is the foundation of any long-lasting underground infrastructure. We handle trenching across various soil profiles with precision depth control, safe side slopes, and efficient backfill compaction.",
     scope: [
@@ -268,7 +268,7 @@ export const servicesData: ServiceItem[] = [
         description: "Backfilling in 150-200mm layers with mechanical compaction to eliminate future road or pavement sinking.",
       },
     ],
-    relatedProjects: ["stormwater-network-naya-raipur", "sewerage-trunk-line-durg"],
+    relatedProjects: ["avinash-new-county", "smart-city-raipur"],
     faqs: [
       {
         question: "How do you avoid damaging existing underground cables or pipes during excavation?",
@@ -282,7 +282,7 @@ export const servicesData: ServiceItem[] = [
     title: "RCC Chambers & Manholes",
     shortDescription: "Cast-in-situ and precast reinforced concrete inspection chambers, valve pits, interceptor traps and manholes.",
     iconName: "Layers",
-    heroImage: "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "/assets/projects/Avinash New County - 2.jpg",
     headline: "RCC Chambers, Manholes & Inspection Pits",
     introduction: "RD Plumbing Solution constructs heavy-duty RCC and brick masonry inspection chambers, sewer manholes, and utility valve pits designed to endure heavy vehicular traffic and resist groundwater ingress.",
     scope: [
@@ -317,7 +317,7 @@ export const servicesData: ServiceItem[] = [
         description: "Fixing traffic-grade manhole covers flush with final road or pavement levels.",
       },
     ],
-    relatedProjects: ["stormwater-network-naya-raipur", "sewerage-trunk-line-durg"],
+    relatedProjects: ["avinash-new-county", "rama-greens"],
     faqs: [
       {
         question: "What cover load ratings do you provide?",
@@ -328,17 +328,17 @@ export const servicesData: ServiceItem[] = [
   {
     id: "commercial-plumbing",
     slug: "commercial-plumbing",
-    title: "Commercial Plumbing",
+    title: "Commercial Plumbing & Fire Fighting",
     shortDescription: "Complete internal and external sanitary, soil, waste, vent and water supply piping for commercial complexes.",
     iconName: "Building2",
-    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "/assets/projects/Rama High Street - 1.jpg",
     headline: "Commercial Plumbing & Sanitary Systems",
-    introduction: "Commercial facilities demand high-reliability plumbing infrastructure capable of high-volume usage. We deliver comprehensive commercial sanitary piping, pressure boosting systems, and drainage networks.",
+    introduction: "Commercial facilities demand high-reliability plumbing infrastructure capable of high-volume usage. We deliver comprehensive commercial sanitary piping, pressure boosting systems, fire hydrant lines, and drainage networks.",
     scope: [
       "Multi-story Soil, Waste, and Vent (S.W.V.) riser piping",
       "Hydro-pneumatic booster pump manifold plumbing",
       "Commercial restroom battery fixture installations",
-      "Hot water circulation and solar heating loop piping",
+      "Fire fighting work, hydrant lines and sprinkler distribution",
       "Kitchen grease trap and waste line integration",
       "Rooftop rainwater harvesting down-take piping",
     ],
@@ -366,7 +366,7 @@ export const servicesData: ServiceItem[] = [
         description: "Precision installation of sensor taps, concealed flush valves, urinal batteries, and commissioning.",
       },
     ],
-    relatedProjects: ["commercial-pipeline-raipur"],
+    relatedProjects: ["mantralaya-naya-raipur", "avinash-one", "rama-high-street"],
     faqs: [
       {
         question: "Can you execute plumbing works during off-hours for operational buildings?",
@@ -377,14 +377,14 @@ export const servicesData: ServiceItem[] = [
   {
     id: "residential-plumbing",
     slug: "residential-plumbing",
-    title: "Residential Plumbing",
-    shortDescription: "Premium concealed and exposed plumbing, bathroom drainage, overhead tank setups and society pipelines.",
+    title: "Residential Plumbing & UPVC/CPVC Solutions",
+    shortDescription: "Premium concealed and exposed plumbing, UPVC/CPVC pipework, bathroom drainage, overhead tank setups and society pipelines.",
     iconName: "Home",
-    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "/assets/projects/Cm House - 1.jpg",
     headline: "Residential Plumbing & Sanitary Installations",
-    introduction: "From luxury private residences to large multi-unit apartment complexes, RD Plumbing Solution delivers precision concealed CPVC/PPR water supply, silent drainage stacks, and trouble-free sanitary installations.",
+    introduction: "From luxury private residences to large multi-unit apartment complexes, RD Plumbing Solution delivers precision concealed CPVC/UPVC water supply, copper piping, silent drainage stacks, and trouble-free sanitary installations.",
     scope: [
-      "Concealed CPVC / Composite hot and cold water piping",
+      "Concealed CPVC / UPVC / Copper hot and cold water piping",
       "Bathroom, kitchen and utility drain line execution",
       "Concealed cisterns and wall-hung toilet frame fixing",
       "Overhead water tank (OHT) and underground sump plumbing",
@@ -415,7 +415,7 @@ export const servicesData: ServiceItem[] = [
         description: "Mounting diverters, shower panels, faucets, and sanitary ware after tiling completion.",
       },
     ],
-    relatedProjects: ["residential-township-drainage"],
+    relatedProjects: ["avinash-chitwan", "cm-and-minister-house", "the-lagoon", "avinash-elegance"],
     faqs: [
       {
         question: "How do you prevent leakage behind bathroom tiles?",
@@ -426,10 +426,10 @@ export const servicesData: ServiceItem[] = [
   {
     id: "irrigation-pipeline-work",
     slug: "irrigation-pipeline-work",
-    title: "Irrigation Pipeline Work",
+    title: "Irrigation & Landscape Pipeline Work",
     shortDescription: "Underground agricultural feeder mains, landscape sprinkler conduits, drip irrigation supply and pump connections.",
     iconName: "Trees",
-    heroImage: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "/assets/projects/Golf - 1.jpg",
     headline: "Irrigation Pipeline & Landscape Watering Networks",
     introduction: "We install underground HDPE and PVC irrigation distribution lines for agricultural farms, public parks, highway green belts, and commercial landscaped estates.",
     scope: [
@@ -437,7 +437,7 @@ export const servicesData: ServiceItem[] = [
       "Automated landscape sprinkler feed network installation",
       "Drip irrigation header and sub-main pipeline connection",
       "Agricultural pump delivery line and air-release chambers",
-      "Solenoide valve box and control station civil works",
+      "Solenoid valve box and control station civil works",
       "Filtration unit and fertigation injector manifold piping",
     ],
     applications: [
@@ -464,7 +464,7 @@ export const servicesData: ServiceItem[] = [
         description: "Commissioning zones to ensure uniform water delivery across all emitters.",
       },
     ],
-    relatedProjects: ["industrial-water-supply-bhilai"],
+    relatedProjects: ["golf-greens", "smart-city-raipur"],
     faqs: [
       {
         question: "What depth are irrigation pipelines buried?",

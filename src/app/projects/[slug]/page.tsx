@@ -102,7 +102,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             {/* Left Column: Details, Scope & Gallery */}
             <div className="lg:col-span-8 space-y-10">
               {/* Primary Cover Image */}
-              <div className="relative h-[360px] sm:h-[460px] rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-md bg-[#F5F9FF]">
+              <div className="relative h-90 sm:h-115 rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-md bg-[#F5F9FF]">
                 <Image
                   src={project.coverImage}
                   alt={project.title}
@@ -204,6 +204,27 @@ export default async function ProjectDetailPage({ params }: Props) {
                     <span className="text-[#64748B] block text-xs">Location</span>
                     <span className="font-bold text-[#172B4D]">{project.location}</span>
                   </div>
+
+                  {project.client && (
+                    <div>
+                      <span className="text-[#64748B] block text-xs">Client / Authority</span>
+                      <span className="font-bold text-[#172B4D]">{project.client}</span>
+                    </div>
+                  )}
+
+                  {project.architect && (
+                    <div>
+                      <span className="text-[#64748B] block text-xs">Architect / Consultants</span>
+                      <span className="font-bold text-[#172B4D]">{project.architect}</span>
+                    </div>
+                  )}
+
+                  {project.scope && (
+                    <div>
+                      <span className="text-[#64748B] block text-xs">Core Scope</span>
+                      <span className="font-bold text-[#172B4D]">{project.scope}</span>
+                    </div>
+                  )}
 
                   <div>
                     <span className="text-[#64748B] block text-xs">Current Status</span>

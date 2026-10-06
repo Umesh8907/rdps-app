@@ -86,9 +86,9 @@ export default function AboutPage() {
             </div>
 
             <div className="lg:col-span-6">
-              <div className="relative h-[420px] rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-md bg-[#F5F9FF]">
+              <div className="relative h-105 rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-md bg-[#F5F9FF]">
                 <Image
-                  src="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=80"
+                  src="/assets/projects/The Lagoon - 1.jpg"
                   alt="RD Plumbing Solution field operations and infrastructure"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

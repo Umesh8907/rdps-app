@@ -69,17 +69,17 @@ export function HeroSection() {
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Main Image Container */}
-              <div className="relative h-[360px] sm:h-[460px] w-full rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-xl bg-white p-2">
+              <div className="relative h-90 sm:h-115 w-full rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-xl bg-white p-2">
                 <div className="relative h-full w-full rounded-xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=80"
+                    src="/assets/hero.avif"
                     alt="Underground pipeline installation and infrastructure execution by RD Plumbing Solution"
                     fill
                     priority
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#172B4D]/30 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#172B4D]/30 via-transparent to-transparent" />
                 </div>
               </div>
 

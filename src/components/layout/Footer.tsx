@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   MapPin,
   Phone,
@@ -56,17 +57,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-[#1769D2] flex items-center justify-center text-white font-black text-xl shadow-sm">
-                RD
-              </div>
-              <div>
-                <span className="text-lg font-black tracking-tight text-[#172B4D] block">
-                  RD Plumbing Solution
-                </span>
-                <span className="text-[10px] font-semibold tracking-wider text-[#64748B] uppercase">
-                  Contractor & Civil Execution
-                </span>
+            <Link href="/" className="inline-block">
+              <div className="relative h-12 w-auto flex items-center bg-white p-2 rounded-xl border border-[#E2EAF4] shadow-xs">
+                <Image
+                  src="/assets/logo.png"
+                  alt="RD Plumbing Solution"
+                  width={200}
+                  height={50}
+                  className="h-9 w-auto object-contain"
+                />
               </div>
             </Link>
 

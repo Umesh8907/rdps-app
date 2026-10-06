@@ -10,9 +10,9 @@ export function AboutIntro() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Image Stack */}
           <div className="lg:col-span-6 relative">
-            <div className="relative h-[380px] sm:h-[460px] w-full rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-md bg-[#F5F9FF]">
+            <div className="relative h-95 sm:h-115 w-full rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-md bg-[#F5F9FF]">
               <Image
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+                src="/assets/projects/Cm House - 1.jpg"
                 alt="RD Plumbing Solution engineering execution on site"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

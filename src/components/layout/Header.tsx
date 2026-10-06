@@ -13,9 +13,11 @@ import {
   ShieldCheck,
   Building,
 } from "lucide-react";
+import Image from "next/image";
 import { siteConfig } from "@/data/siteConfig";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import { TopBar } from "./TopBar";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
@@ -37,26 +39,30 @@ export function Header() {
   }, [pathname]);
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md transition-all duration-300 border-b",
-        scrolled ? "border-[#E2EAF4] shadow-sm py-2.5" : "border-[#E2EAF4]/80 py-3.5"
-      )}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+    <header className="sticky top-0 z-40 w-full shadow-xs">
+      {/* Top Notice / Announcement Bar */}
+      <TopBar />
+
+      {/* Main Navbar */}
+      <div
+        className={cn(
+          "w-full bg-white/95 backdrop-blur-md transition-all duration-300 border-b",
+          scrolled ? "border-[#E2EAF4] shadow-sm py-2" : "border-[#E2EAF4]/80 py-2.5"
+        )}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
           {/* Logo & Brand Identity */}
           <Link href="/" className="flex items-center gap-3 group focus:outline-none">
-            <div className="w-10 h-10 rounded-lg bg-[#1769D2] flex items-center justify-center text-white font-black text-xl shadow-md group-hover:bg-[#124B9A] transition-colors">
-              RD
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-black tracking-tight text-[#172B4D] leading-tight group-hover:text-[#1769D2] transition-colors">
-                RD Plumbing Solution
-              </span>
-              <span className="text-[10px] font-semibold tracking-wider text-[#64748B] uppercase">
-                Pipeline & Infrastructure
-              </span>
+            <div className="relative h-11 sm:h-12 w-auto flex items-center">
+              <Image
+                src="/assets/logo.png"
+                alt="RD Plumbing Solution"
+                width={200}
+                height={52}
+                priority
+                className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-102"
+              />
             </div>
           </Link>
 
@@ -95,7 +101,7 @@ export function Header() {
                     {/* Dropdown Menu */}
                     {activeDropdown === item.name && (
                       <div className="absolute top-full left-0 w-80 pt-2 z-50 animate-in fade-in-50 slide-in-from-top-2 duration-150">
-                        <div className="bg-white rounded-xl border border-[#E2EAF4] shadow-xl p-2.5 divide-y divide-[#F3F8FF]">
+                        <div className="bg-white rounded-xl border border-[#E2EAF4] shadow-xl p-2.5 space-y-1">
                           {item.dropdown?.map((subItem) => (
                             <Link
                               key={subItem.name}
@@ -169,6 +175,7 @@ export function Header() {
           </div>
         </div>
       </div>
+    </div>
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
