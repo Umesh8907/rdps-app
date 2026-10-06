@@ -38,6 +38,10 @@ export function Header() {
     setActiveDropdown(null);
   }, [pathname]);
 
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <header className="sticky top-0 z-40 w-full shadow-xs">
       {/* Top Notice / Announcement Bar */}

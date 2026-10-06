@@ -1,10 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { MessageSquare } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 
 export function FloatingWhatsApp() {
+  const pathname = usePathname();
+
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <div className="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-40">
       <Link

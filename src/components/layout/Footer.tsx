@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import {
   MapPin,
   Phone,
@@ -12,6 +15,12 @@ import {
 import { siteConfig } from "@/data/siteConfig";
 
 export function Footer() {
+  const pathname = usePathname();
+
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <footer className="bg-[#F5F9FF] border-t border-[#E2EAF4] text-[#172B4D]">
       {/* Top Banner / Corporate Highlight */}

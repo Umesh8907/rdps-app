@@ -1,10 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Phone, MessageSquare, FileText } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 
 export function MobileStickyBar() {
+  const pathname = usePathname();
+
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#E2EAF4] shadow-[0_-4px_12px_rgba(0,0,0,0.06)] px-3 py-2">
       <div className="grid grid-cols-3 gap-2">
