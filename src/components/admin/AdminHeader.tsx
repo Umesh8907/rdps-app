@@ -95,7 +95,7 @@ export function AdminHeader({
 
         {/* User pill */}
         <div className="flex items-center gap-2 pl-2 sm:border-l sm:border-slate-800">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 text-slate-950 font-bold flex items-center justify-center text-xs shadow-sm">
+          <div className="w-8 h-8 rounded-full bg-linear-to-tr from-amber-500 to-amber-300 text-slate-950 font-bold flex items-center justify-center text-xs shadow-sm">
             AD
           </div>
           <div className="hidden md:block text-left">

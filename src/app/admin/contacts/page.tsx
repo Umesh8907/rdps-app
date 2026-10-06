@@ -147,7 +147,7 @@ export default function AdminContactsPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search by name, phone, message content..."
-            className="w-full pl-10 pr-20 py-2.5 rounded-xl bg-[#0B132B] border border-slate-700 text-white placeholder-slate-500 text-xs sm:text-sm focus:outline-hidden focus:border-amber-400 focus:ring-1 focus:ring-amber-400"
+            className="admin-input pl-10 pr-20 py-2.5 text-xs sm:text-sm"
           />
           <button
             type="submit"
@@ -372,7 +372,7 @@ export default function AdminContactsPage() {
                   <select
                     value={editingStatus}
                     onChange={(e) => setEditingStatus(e.target.value as ContactStatus)}
-                    className="w-full py-2 px-3 rounded-xl bg-[#0B132B] border border-slate-700 text-white text-xs font-semibold focus:outline-hidden focus:border-amber-400"
+                    className="admin-select py-2 px-3 text-xs font-semibold"
                   >
                     <option value="new">🟡 New</option>
                     <option value="read">🔵 Read / Followed Up</option>
@@ -388,7 +388,7 @@ export default function AdminContactsPage() {
                     value={editingNotes}
                     onChange={(e) => setEditingNotes(e.target.value)}
                     placeholder="e.g. Called client, sent quotation via WhatsApp."
-                    className="w-full p-2.5 rounded-xl bg-[#0B132B] border border-slate-700 text-white placeholder-slate-500 text-xs focus:outline-hidden focus:border-amber-400"
+                    className="admin-input p-2.5 text-xs"
                   />
                 </div>
 

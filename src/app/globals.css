@@ -83,3 +83,36 @@
 .btn-shimmer:hover::after {
   transform: rotate(25deg) translateY(100%);
 }
+
+/* Dedicated Admin Form Control Classes */
+.admin-input {
+  width: 100%;
+  border-radius: 0.75rem;
+  background-color: #0b132b;
+  border: 1px solid #334155;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.admin-input::placeholder {
+  color: #64748b;
+}
+.admin-input:focus {
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2);
+}
+
+.admin-select {
+  width: 100%;
+  border-radius: 0.75rem;
+  background-color: #0b132b;
+  border: 1px solid #334155;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.admin-select:focus {
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2);
+}
+

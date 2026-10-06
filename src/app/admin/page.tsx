@@ -84,7 +84,7 @@ export default function AdminDashboardPage() {
   return (
     <div className="space-y-6">
       {/* Top Banner / Quick Action Bar */}
-      <div className="bg-gradient-to-r from-amber-500/10 via-slate-900/90 to-slate-900 border border-amber-500/20 p-5 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div className="bg-linear-to-r from-amber-500/10 via-slate-900/90 to-slate-900 border border-amber-500/20 p-5 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
             <h2 className="text-lg font-bold text-white">Engineering Leads & Quotation Control</h2>
@@ -306,7 +306,7 @@ export default function AdminDashboardPage() {
                     </div>
                     <div className="h-1.5 rounded-full bg-slate-800 overflow-hidden">
                       <div
-                        className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full"
+                        className="h-full bg-linear-to-r from-amber-500 to-amber-400 rounded-full"
                         style={{
                           width: `${Math.min(100, (svc.count / Math.max(1, quotes.total)) * 100)}%`,
                         }}
@@ -319,7 +319,7 @@ export default function AdminDashboardPage() {
           </div>
 
           {/* Quick Help Card */}
-          <div className="bg-gradient-to-br from-slate-900 to-[#0B132B] border border-slate-800 rounded-2xl p-5 space-y-3">
+          <div className="bg-linear-to-br from-slate-900 to-[#0B132B] border border-slate-800 rounded-2xl p-5 space-y-3">
             <div className="flex items-center gap-2">
               <HardHat className="w-5 h-5 text-amber-400" />
               <h4 className="text-sm font-bold text-white">RDPS Lead Workflow</h4>

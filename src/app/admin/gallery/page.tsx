@@ -47,7 +47,7 @@ export default function AdminGalleryPage() {
               className="object-cover group-hover:scale-105 transition-transform duration-300 opacity-70 group-hover:opacity-90"
               sizes="(max-width: 768px) 50vw, 25vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/40 to-transparent" />
             <div className="relative z-10">
               <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400">
                 {item.category}

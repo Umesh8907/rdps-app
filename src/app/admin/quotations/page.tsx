@@ -222,7 +222,7 @@ function QuotationsContent() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search by client, phone, location, project..."
-            className="w-full pl-10 pr-20 py-2.5 rounded-xl bg-[#0B132B] border border-slate-700 text-white placeholder-slate-500 text-xs sm:text-sm focus:outline-hidden focus:border-amber-400 focus:ring-1 focus:ring-amber-400"
+            className="admin-input pl-10 pr-20 py-2.5 text-xs sm:text-sm"
           />
           <button
             type="submit"
@@ -328,7 +328,7 @@ function QuotationsContent() {
                           {q.fullName}
                         </div>
                         {q.companyName && (
-                          <div className="text-xs text-slate-400 font-medium truncate max-w-[180px]">
+                          <div className="text-xs text-slate-400 font-medium truncate max-w-45">
                             {q.companyName}
                           </div>
                         )}
@@ -346,7 +346,7 @@ function QuotationsContent() {
 
                       {/* Services */}
                       <td className="py-3.5 px-4">
-                        <div className="flex flex-wrap gap-1 max-w-[220px]">
+                        <div className="flex flex-wrap gap-1 max-w-55">
                           {(q.services || []).slice(0, 2).map((s, idx) => (
                             <span
                               key={idx}
@@ -552,7 +552,7 @@ function QuotationsContent() {
                     <select
                       value={editingStatus}
                       onChange={(e) => setEditingStatus(e.target.value as QuotationStatus)}
-                      className="w-full py-2 px-3 rounded-xl bg-[#0B132B] border border-slate-700 text-white text-xs font-semibold focus:outline-hidden focus:border-amber-400"
+                      className="admin-select py-2 px-3 text-xs font-semibold"
                     >
                       <option value="new">🟡 New Lead (Pending Review)</option>
                       <option value="reviewing">🔵 Under Review (Calculating BOQ)</option>
@@ -580,7 +580,7 @@ function QuotationsContent() {
                     value={editingNotes}
                     onChange={(e) => setEditingNotes(e.target.value)}
                     placeholder="Enter internal notes, e.g. 'Estimated 120 piles 800mm @ 18m. Quoted Rs 18.5L. Followed up on phone.'"
-                    className="w-full p-3 rounded-xl bg-[#0B132B] border border-slate-700 text-white placeholder-slate-500 text-xs focus:outline-hidden focus:border-amber-400 focus:ring-1 focus:ring-amber-400"
+                    className="admin-input p-3 text-xs"
                   />
                 </div>
 

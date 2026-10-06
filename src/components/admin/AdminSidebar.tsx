@@ -112,7 +112,7 @@ export function AdminSidebar({
           className="flex items-center gap-3 group overflow-hidden"
           onClick={() => setMobileOpen(false)}
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-400 flex items-center justify-center text-slate-950 shadow-lg shadow-amber-500/20 shrink-0 font-extrabold tracking-wider">
+          <div className="w-10 h-10 rounded-xl bg-linear-to-tr from-amber-500 to-amber-400 flex items-center justify-center text-slate-950 shadow-lg shadow-amber-500/20 shrink-0 font-extrabold tracking-wider">
             <HardHat className="w-6 h-6" />
           </div>
           {!collapsed && (
@@ -155,7 +155,7 @@ export function AdminSidebar({
               onClick={() => setMobileOpen(false)}
               className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all group relative ${
                 active
-                  ? "bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold shadow-md shadow-amber-500/10"
+                  ? "bg-linear-to-r from-amber-500 to-amber-600 text-slate-950 font-bold shadow-md shadow-amber-500/10"
                   : "text-slate-300 hover:text-white hover:bg-slate-800/50"
               }`}
               title={collapsed ? item.title : undefined}
